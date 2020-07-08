@@ -1,0 +1,14 @@
+1. Install spacy(https://spacy.io/usage), and download the en_core_web_sm model
+    conda install -c conda-forge spacy
+    python -m spacy download en_core_web_sm
+    
+2. Prepare data:
+  1) copy DocRED/data/ directory to ./
+  2) copy DocRED/code/prepro_data to ./code/
+  3) run python gen_data.py (different from gen_data in DocRED)
+
+3. Train
+  python train.py
+
+4. Test
+  python test.py
